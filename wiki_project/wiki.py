@@ -29,8 +29,8 @@ def sendtodb(research, summary):
         cur.execute("""INSERT INTO famous_people(name, summary)
                     VALUES(?, ?)""", (research, summary))
         con.commit()
+        print("Amazing, " + research + " has been added to the database with the following id: " + str(cur.lastrowid))
         cur.close()
-        print("Amazing, " + research + " has been added!")
 
     except sqlite3.Error as error:
         print("Oops it seems there was an error while sending data...", error)
