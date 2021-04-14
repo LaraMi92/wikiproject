@@ -12,7 +12,7 @@ if research == None:
     research = search(userinput)
     
 else:
-    print("Did you mean " + research + " ?\n")
+    print("I don't know this person. Did you mean " + research + " ?\n")
     research = search(research)
     
 print("Here is what we found: " + research[0])
