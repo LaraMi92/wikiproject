@@ -15,7 +15,8 @@ else:
     print("I don't know this person. Did you mean " + research + " ?\n")
     research = search(research)
     
-print("Here is what we found: " + research[0])
+
+print("Here is what we found: " + str(research))
 summary = wikipedia.summary(research) 
 
 #database queries
